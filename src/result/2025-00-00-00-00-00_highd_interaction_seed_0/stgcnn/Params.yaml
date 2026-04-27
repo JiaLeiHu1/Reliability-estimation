@@ -1,0 +1,37 @@
+!!python/object:argparse.Namespace
+Model_name: stgcnn
+TIMESTEP: 100
+batch_size: 32
+batch_size_test: 256
+device: cuda
+dir_name: 2025-00-00-00-00-00
+downsample_rate: 2
+eval_future_length: 2000
+future_length: 2000
+future_list:
+- 200
+- 400
+- 600
+- 800
+- 1000
+- 1200
+- 1400
+- 1600
+- 1800
+- 2000
+lr: 0.0001
+mode: val
+n_bins: 3
+n_jobs: 1
+num_workers: 0
+predicted_type: 0
+previous_length: 1000
+save_per_epoch: 1
+seed: 0
+source: highd
+target: interaction
+test_mode: 0
+train_epoches: 50
+transition_min: 0.1
+x_grid_num: 29
+y_grid_num: 29
